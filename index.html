@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Imovirtual</title>
+</head>
+<body>
+  <header>
+    <div class="barra_topo">   
+      <div class="logo">
+        <a href="https://www.imovirtual.com/">
+          <img src="imovirtual_logo.png"  title="Imovirtual: De T0 a T-Tudo! Apartamentos, Quartos e Casas">
+        </a>
+      </div>
+
+      <!-- barra de navegção inicial com butões que ao clicar com o rato por cima mostram as opções -->
+      
+      <div class="menu1">
+        <div class="tab">
+          <input type="radio" id="tab-1" name="tab-group-1"/>
+          <label for="tab-1">Anúncios <span class="seta"></span></label>
+          <div class="tab close-tab">
+            <input type="radio" id="tab-close" name="tab-group-1"/>
+            <label for="tab-close">Anúncios <span class="setatop"></span></label>
+          </div>
+    
+          <div class="conteudo">
+            <ul>
+              <li><a href="https://www.imovirtual.com/comprar/">Para comprar</a></li>
+              <li><a href="https://www.imovirtual.com/arrendar/">Para arrendar</a></li>
+              <li><a href="https://www.imovirtual.com/ferias/">Para férias</a></li>
+              <li><a href="https://www.imovirtual.com/investimento/home/">Empreendimentos</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" id="tab-2" name="tab-group-1"/>
+          <label for="tab-2">Empreendimentos <span class="seta"></label>
+          <div class="tab close-tab">
+            <input type="radio"id="tab-close" name="tab-group-1"/>
+            <label for="tab-close">Empreendimentos <span class="setatop"></label>
+          </div>
+          <div class="conteudo">
+          <ul>
+            <li><a href="https://www.imovirtual.com/investimento/home/"> Ver todos os anúncios de Empreendimentos</a></li>
+            <li><optgroup label="Tipo"></optgroup></li>
+            <li><a href="https://www.imovirtual.com/investimento/?search%5Bfilter_enum_offered_estates_type%5D=flats"> Apartamentos novos</a></li>
+            <li><a href="https://www.imovirtual.com/investimento/?search%5Bfilter_enum_offered_estates_type%5D=houses"> Moradias novas</a></li>
+            <li><optgroup label="Promotores imobiliários populares"></optgroup></li>
+            <li><a href="https://www.imovirtual.com/agencia/porta-da-frente-christies-IDek1v/"> Porta da Frente Christie's</a></li>
+            <li><a href="https://jllempreendimentos.imovirtual.com/"> JLL Residencial</a></li>
+            <li><a href="https://infante-riu.imovirtual.com/"> Infante & Riu - Portugal Real Estate</a></li>
+            <li><optgroup label="Localizações populares"></optgroup></li>
+            <li><a href="https://www.imovirtual.com/investimento/avenidas-novas-lisboa/"> Avenidas Novas</a></li>
+            <li><a href="https://www.imovirtual.com/investimento/cascais-e-estoril-cascais/"> Cascais e Estoril</a></li>
+            <li><a href="https://www.imovirtual.com/investimento/misericordia-lisboa/"> Misericórdia</a></li>
+            <li><a href="https://www.imovirtual.com/investimento/santo-antonio-lisboa/"> Santo António</a></li>
+            <li><a href="https://www.imovirtual.com/investimento/cedofeita-santo-ildefonso-se-miragaia-sao-nicolau-e-vitoria-porto/"> Cedofeita</a></li>
+            <li><a href="https://www.imovirtual.com/investimento/santa-maria-maior-lisboa/"> Santa Maria Maior</a></li>
+            <li><a href="https://www.imovirtual.com/investimento/estrela-lisboa/"> Estrela</a></li>
+            <li><a href="https://www.imovirtual.com/investimento/alcantara-lisboa/"> Alcântara</a></li>   
+            <li><a href="https://www.imovirtual.com/investimento/santa-marinha-e-sao-pedro-da-afurada-vila-nova-de-gaia/"> Campo de Ourique</a></li>   
+            <li><a href="https://www.imovirtual.com/investimento/paranhos-porto/"> Paranhos</a></li>
+            <li><a href="https://www.imovirtual.com/investimento/matosinhos-e-leca-da-palmeira-matosinhos/"> Santa Marinha e São Pedro da Afurada</a></li>   
+            <li><a href="ohttps://www.imovirtual.com/investimento/matosinhos-e-leca-da-palmeira-matosinhos/"> Matosinhos e Leça da Palmeira</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="radio"id="tab-3" name="tab-group-1"/>
+        <label for="tab-3">Profissionais <span class="seta"></label>
+        <div class="tab close-tab">
+          <input type="radio"id="tab-close" name="tab-group-1"/>
+          <label for="tab-close">Profissionais <span class="setatop"></label>
+        </div>
+  
+        <div class="conteudo">
+          <ul>
+            <li><a href="https://www.imovirtual.com/empresas/agencias-imobiliarias/"> Agências Imobiliárias</a></li>
+            <li><a href="https://www.imovirtual.com/empresas/developer/"> Promotores Imobiliários</a></li>
+          </ul> 
+        </div>
+      </div>
+
+      <!-- butões sem dropdown -->
+
+      <div class="tab">
+        <a href="https://www.imovirtual.com/noticias/"><label>Blog</label></a>
+      </div>
+      <div class="tab">
+        <a href="https://nossacasanossomundo.com/"><label>A Nossa Campanha</label></a>
+      </div>
+    </div>
+    <div class="menu2">
+      <div class="tab">
+        <a href="https://www.imovirtual.com/pt/login"><label><i class='fa fa-user-o'></i>&nbsp;&nbsp;&nbsp;&nbsp;Conta pessoal</label></a>
+      </div>
+      <div class="tab">
+        <input type="radio"id="tab-4" name="tab-group-1"/>
+        <label for="tab-4">pt <span class="seta"></span></label>
+        <div class="tab close-tab">
+          <input type="radio" id="tab-close" name="tab-group-1"/>
+          <label for="tab-close">pt <span class="setatop"></span></label>
+        </div>
+        <div class="conteudo">
+          <ul>
+            <li><a href="https://www.imovirtual.com/">português</a></li>
+            <li><a href="https://www.imovirtual.com/en/">english</a></li>
+          </ul>
+        </div>
+      </div>      
+
+      <!-- butao diferente -->
+
+      <div class="tab">
+       <a class="butao_azul" href="https://www.imovirtual.com/novo-anuncio/categoria/">Adicionar Anúncio</a>
+      </div>
+    </div>  
+  </header>
+
+  <div class="imagem_inicial">  
+    <div class="centro">
+      <h1> O melhor sítio para comprar e arrendar casa em Portugal</h1>
+      <!-- 
+      <div class="tb">
+       <input type="radio" id="pesquisar" name="tb" checked="checked">
+       <label for="pesquisar">Pesquisar</label>
+        <div class="tabs"> 
+          <div class="tab">
+            <input type="radio" id="tab-10" name="tab-group-2"/>
+            <label for="tab-10">Apartamentos<span class="seta"></span></label>
+            <div class="tab close-tab" id="tab-close" name="tab-group-2">
+              <input type="radio"/>
+              <label for="tab-close">Apartamentos<span class="setatop"></span></label>
+            </div>
+    
+            <div class="conteudo">
+              <ul>
+                <li><a href="#">Apartamentos</a></li>
+                <li><a href="#">Moradias</a></li>
+                <li><a href="#">Quartos</a></li>
+                <li><a href="#">Terrrenos</a></li>
+                <li><a href="#">Lojas</a></li>
+                <li><a href="#">Armazéns</a></li>
+                <li><a href="#">Garagens</a></li>
+                <li><a href="#">Escritórios</a></li>
+                <li><a href="#">Prédios</a></li>
+                <li><a href="#">Quintas e Herdades</a></li>
+                <li><a href="#">Trespasses</a></li>
+                <li><a href="#">Todos os anúncios</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab">
+            <input type="radio"id="tab-11" name="tab-group-2"/>
+            <label for="tab-11">para comprar <span class="seta"></span></label>
+            <div class="tab close-tab" id="tab-close" name="tab-group-2">
+              <input type="radio"/>
+              <label for="tab-close">para comprar<span class="setatop"></span></label>
+            </div>
+    
+            <div class="conteudo">
+              <ul>
+                <li><a href="#">para comprar</a></li>
+                <li><a href="#">para arrendar</a></li>
+                <li><a href="#">para férias</a></li>
+              </ul>
+            </div> 
+          </div>
+          <div class="tab">
+            <svg viewBox="0 0 512 512" class="css-1bg0bcr"><path d="M232.503 501.67C87.205 291.031 60.235 269.413 60.235 192c0-106.039 85.961-192 192-192 106.04 0 192 85.961 192 192 0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM252.235 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>
+             <input type="text" placeholder="Procure uma localização" name="procurar">
+                 <div class="tab">
+                  <input type="radio"id="tab-3" name="tab-group-2"/>
+                  <label for="tab-3">+5km<span class="seta"></span></label>
+                  <div class="tab close-tab"id="tab-close" name="tab-group-2">
+                    <input type="radio"/>
+                    <label for="tab-close">+5km<span class="setatop"></span></label>
+                  </div>
+                  <div class="conteudo">
+                    <ul>
+                      <li><a href="#">+0 km</a></li>
+                      <li><a href="#"></a>+5 km</li>
+                      <li><a href="#"></a>+10 km</li>
+                      <li><a href="#">+15 km</a></li>
+                      <li><a href="#"></a>+25 km</li>
+                      <li><a href="#"></a>+50 km</li>
+                      <li><a href="#"></a>+75 km</li>
+                    </ul>
+                  </div>  
+                <button ><i class="fa fa-search"></i>&nbsp;&nbsp;&nbsp;&nbsp;Pesquisar</button>
+            </div>
+            <div class="tab">
+              <input type="radio" id="tab-12" name="tab-group-2"/>
+              <label for="tab-12">Preço <span class="seta"></span>
+              </label>
+              <div class="tab close-tab">
+                <input type="radio" id="tab-close" name="tab-group-2"/>
+                <label for="tab-close">Preço <span class="setatop"></span></label>
+              </div>
+              <div class="conteudo">
+                <ul>
+                    <div class="autocomplete" style="width:200px;">
+                      <input type="number" min="0" step="1" name="preco" id="preco" required="required" placeholder="                 €">-<input type="number" min="0" step="1" name="preco" id="preco" required="required" placeholder="                 €">
+                    </div>
+                </ul>
+              </div>
+            </div>
+            <div class="tab">
+              <input type="radio" id="tab-13" name="tab-group-2"/>
+              <label for="tab-13">Área útil (m²) <span class="seta"></span>
+              </label>
+              <div class="tab close-tab">
+                <input type="radio" id="tab-close" name="tab-group-2"/>
+                <label for="tab-close">Área útil (m²)  <span class="setatop"></span></label>
+              </div>
+
+              <div class="conteudo">
+                <ul>
+                    <div class="autocomplete" style="width:200px;">
+                      <input type="number" min="0" step="1" name="area" id="area" required="required" placeholder="m²">-<input type="number" min="0" step="1" name="area" id="area" required="required" placeholder="m²">
+                    </div>
+                </ul>
+              </div>
+            </div>
+            <div class="tab">
+              <input type="radio" id="tab-14" name="tab-group-2"/>
+              <button type="button" class="butao_pesquisar_fundo">
+                <span class="texto_empreendimento"> Empreendimento <span class="seta"></span></span>
+              </button>  
+              <div class="tab close-tab">
+                <input type="radio" id="tab-close" name="tab-group-2"/>
+                <label for="tab-close">Área útil (m²)  <span class="setatop"></span></label>
+              </div>
+                <div class="conteudo">
+                  <p>Empreendimento</p>
+                  <input type="radio" id="todos">
+                  <label for="todos">Todos</label><br>
+                  <input type="radio" id="sim">
+                  <label for="sim">Sim</label><br>
+                  <input type="radio" id="nao">
+                  <label for="nao">Não</label>
+                </div>
+            </div>  
+          <button type="button" class="butao_pesquisar_fundo">
+            <span class="texto_preco">Preço</span>
+          </button>
+          <button type="button" class="butao_pesquisar_fundo">
+            <span class="texto_area"> Área (m²) </span>
+          </button>  
+          <button type="button" class="butao_pesquisar_fundo">
+            <span class="texto_empreendimento"> Empreendimento </span>
+            <p>Empreendimento</p>
+            <input type="radio" id="todos">
+            <label for="todos">Todos</label><br>
+            <input type="radio" id="sim">
+            <label for="sim">Sim</label><br>
+            <input type="radio" id="nao">
+            <label for="nao">Não</label>
+          </button>  
+          <button type="button" class="butao_pesquisar_fundo">
+          <span class="texto_tipologia"> Tipologia </span>            
+          <p>Tipologia</p>
+          <input type="checkbox" id="t0">
+          <label for="t0"> T0</label><br>
+          <input type="checkbox" id="t1">
+          <label for="t1"> T1</label><br>
+          <input type="checkbox" id="t2"">
+          <label for="t2"> T2</label><br>
+          <input type="checkbox" id="t3">
+          <label for="t3"> T3</label><br>
+          <input type="checkbox" id="t4">
+          <label for="t4"> T4</label><br>
+          <input type="checkbox" id="t5"">
+          <label for="t5"> T5</label><br>
+          <input type="checkbox" id="t6">
+          <label for="t6"> T6</label><br>
+          <input type="checkbox" id="t7"">
+          <label for="t7"> T7</label><br>
+          <input type="checkbox" id="t8">
+          <label for="t8"> T8</label><br>
+          <input type="checkbox" id="t9">
+          <label for="t9"> T9</label><br>
+          <input type="checkbox" id="t10"">
+          <label for="t10"> T10 ou superior</label><br>     
+          </button>  
+          <button type="button" class="butao_pesquisar_fundo">
+            <span class="texto_mais"> Mais Opções </span>
+            <input type="number" min="0" step="1" name="preco" id="preco" required="required" placeholder="                 €">-<input type="number" min="0" step="1" name="preco" id="preco" required="required" placeholder="                 €">
+            <input type="number" min="0" step="1" name="preco" id="preco" required="required" placeholder="                 m²">-<input type="number" min="0" step="1" name="preco" id="preco" required="required" placeholder="                m²">
+            <button type="button" class="butao_pesquisar_fundo">
+              <span class="texto_mais"> Casas de Banho</span>
+              <input type="checkbox" id="1">
+                <label for="1"> 1</label><br>
+                <input type="checkbox" id="2">
+                <label for="2"> 2</label><br>
+                <input type="checkbox" id="3"">
+                <label for="3"> 3</label><br>
+                <input type="checkbox" id="4">
+                <label for="4"> 4 ou mais</label><br>
+            </button>
+            <button type="button" class="butao_pesquisar_fundo">
+              <span class="texto_mais"> Certificado Energético</span>
+              <input type="checkbox" id="A+">
+                <label for="A+"> A+</label><br>
+                <input type="checkbox" id="A">
+                <label for="A"> A</label><br>
+                <input type="checkbox" id="B">
+                <label for="B"> B</label><br>
+                <input type="checkbox" id="B-">
+                <label for="B-"> B-</label><br>
+                <input type"checkbox id="C">
+                <label for="C"> C</label><br>
+                <input type="checkbox" id="D">
+                <label for="D"> D</label><br>
+                <input type="checkbox" id="E"">
+                <label for="E"> E</label><br>
+                <input type="checkbox" id="F">
+                <label for="F"> F</label><br>
+                <input type="checkbox" id="G">
+                <label for="G"> G</label><br>
+                <input type="checkbox" id="Isento">
+                <label for="Isento"> Isento</label><br>
+            </button>  
+             <button type="button" class="butao_pesquisar_fundo">
+              <span class="texto_mais"> Condição</span>
+              <input type="checkbox" id="Ruina">
+                <label for="Ruina"> Ruína</label><br>
+                <input type="checkbox" id="Novo">
+                <label for="Novo">Novo</label><br>
+                <input type="checkbox" id="Renovado">
+                <label for="Renovado"> Renovado</label><br>
+                <input type="checkbox" id="Usado">
+                <label for="Usado"> Usado</label><br>
+                <input type"checkbox id="construcao">
+                <label for="Em construcao"> Em construção</label><br>
+                <input type="checkbox" id="recuperar">
+                <label for="recuperar"> Para recuperar</label><br>
+            </button>  
+            <input type="checkbox" id="Aceita">
+            <label for="Aceita"> Aceita Permuta</label><br>
+            <input type="checkbox" id="Negociavel">
+            <label for="Negociavel"> Negociável</label><br>
+            <input type="checkbox" id="banca">
+            <label for="banca">  Imóvel de banca</label><br>
+            <input type="checkbox" id="ofertas_particulares">
+            <label for="ofertas_particulares"> Apenas ofertas particulares</label><br>
+            <input type="checkbox" id="anuncios_casa_aberta">
+            <label for="anuncios_casa_aberta"> Apenas anúncios com "casa aberta"</label><br>
+            <button>
+              <input type="checkbox" id=" ultimas">
+              <label for=" ultimas">  Últimas 24 horas</label><br>
+              <input type="checkbox" id="ultimas">
+              <label for="ultimas"> Últimos 3 dias</label><br>
+              <input type="checkbox" id="ultimas">
+              <label for="ultimas"> Últimos 7 dias</label><br>
+              <input type="checkbox" id="ultimas">
+              <label for="ultimas"> Nos últimos 14 dias</label><br>
+            </button>
+            <p>Número do anúncio</p>
+            <input type="number" min="0"  name="numero" id="numer_anuncio" required="required" placeholder=" ">
+            <p>Parte da descrição</p>
+            <input type="text" name="descricao" id="descricao" required="required" placeholder=" ">
+            <input type="checkbox" id="Fotografias">
+            <label for="Fotografias"> Fotografias</label><br>
+            <input type="checkbox" id="Video">
+            <label for="Video">Vídeo</label><br>
+            <input type="checkbox" id="Virtual">
+            <label for="Virtual"> Visita Virtual </label><br>
+            <p>Características</p>
+            <input type="checkbox" id="Aquecimento">
+            <label for="Aquecimento">Aquecimento Central </label><br>
+            <input type"checkbox id="Condicionado">
+            <label for="Condicionado"> Ar Condicionado</label><br>
+            <input type="checkbox" id="Acessibilidade">
+            <label for="Acessibilidade">  Acessibilidade a pessoas com mobilidade condicionada</label><br>
+            <input type="checkbox" id="Arrecadacao">
+            <label for="Arrecadacao">  Arrecadação</label><br>
+            <input type="checkbox" id="1_carro">
+            <label for="1_carro">  Box (1 carro)</label><br>
+            <input type="checkbox" id="2_carro">
+            <label for="2_carro">  Box (2 carros)</label><br>
+            <input type="checkbox" id="Condominio">
+            <label for="Condominio">Condomínio fechado</label><br>
+            <input type="checkbox" id="Cozinha">
+            <label for="Cozinha">Cozinha Equipada</label><br>
+            <input type="checkbox" id="Elevador">
+            <label for="Elevador"> Elevador</label><br>
+            <input type="checkbox" id="Jardim">
+            <label for="Jardim">Jardim</label><br>
+            <input type="checkbox" id="Lareira">
+            <label for="Lareira">Lareira</label><br>
+            <input type="checkbox" id="Mobilado">
+            <label for="Mobilado">Mobilado</label><br>
+            <input type="checkbox" id="Parqueamento_1">
+            <label for="Parqueamento_1">Parqueamento (1 carro)</label><br>
+            <input type="checkbox" id="Parqueamento_2">
+            <label for="Parqueamento_2">Parqueamento (2 carros)</label><br>
+            <input type="checkbox" id="Piscina">
+            <label for="Piscina">Piscina</label><br>
+            <input type="checkbox" id="Suite">
+            <label for="Suite">Suite</label><br>
+            <input type="checkbox" id="Terraco">
+            <label for="Terraco">Terraço</label><br>
+            <input type="checkbox" id="Varanda">
+            <label for="Varanda">Varanda</label><br>
+            <input type="checkbox" id="Vigilancia">
+            <label for="Vigilancia">Vigilância/segurança</label><br> 
+            <button type="submit"><i class="fa fa-search"></i>&nbsp;&nbsp;&nbsp;&nbsp;Pesquisar</button>
+      </button>   
+      <div class="tb">
+        <input type="radio" id="empreendimentos" name="tb">
+        <label for="empreendimentos"><a href="https://www.imovirtual.com/investimento/home/">Empreendimentos</a></label>  
+      </div>
+      -->
+      <div class="padding">
+        <div class="conteudo_tabs">
+          <ul style="display: inline-flex; align-items: flex-end;">
+            <li class="pesquisar_tb"><a href="#">Pesquisar</a></li>
+            <li class="empreendimentos_tb"><a href="#">Empreendimentos</a></li>
+          </ul>
+        </div>
+        <!-- <button type="button" class="pesquisar_tb">Pesquisar</button>
+        <button type="button" class="empreendimentos_tb">Empreendimentos</button> -->
+      
+      <div class="margim">
+        <div class="conteudo_tb">
+          <button type="button" class="terrenos">Apartamentos <span class="seta"></span></button>
+          <button type="button" class="para_comprar">para comprar <span class="seta"></span></button>
+          <button type="button" class="localizacao">Procure por uma localização</button>
+          <button type="button" class="pesquisar"><i class="fa fa-search"></i>&nbsp;&nbsp;&nbsp;Pesquisar</button>
+          <p>
+           <button type="button" class="preco">Preço <span class="seta"></span></button>
+           <button type="button" class="area_util">Área útil (m²) <span class="seta"></span></button>
+           <button type="button" class="empreendimento">Empreendimento <span class="seta"></span></button>
+           <button type="button" class="tipologia">Tipologia <span class="seta"></span></button>
+           <button type="button" class="mais_opcoes">Mais opções <span class="seta"></span></button>
+          </p>
+        </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+  
+  <button type="button" class="ajuda_vertical" title="Feedback" ><a href="https://imovirtual1.zendesk.com/hc/pt/requests/new?ticket_form_id=114093985833">Ajuda</a></button>
+
+
+
+  <h1>Anúncios destacados</h1>
+  <div class="galeria">
+    <div class="fotos">
+      <a href="https://www.imovirtual.com/pt/anuncio/moradia-geminada-t2-em-vimieiro-ID13L7O.html">
+       <img src="foto 1.jpg" class="img-gallery" id="ft1" alt= "snow" title="Moradia Geminada T2 com área de 106 m2- Ovoa e Vimeir,Santa Comba Dão, Viseu- Foto 1">
+       <div class="legenda" id="t1">
+         <h4>
+           <p>74 000€</p>
+           <p>Ovoa e Vimeiro, Santa Comba Dão, Viseu</p> 
+           <p>106m2</p>
+          </h4>
+        </div>
+      </a>
+            
+      <a href="https://www.imovirtual.com/pt/anuncio/bom-sucesso-resort-ID15vKX.html">
+        <img src="foto 2.jpg" class="img-gallery" id="ft2" alt= "snow" title="Bom Sucesso Resort- Vau, Óbidos, Leiria- Foto 1">
+        <div class="legenda" id="t2">
+          <h4>
+            <p>Preço sob consulta</p>
+            <p>Vau, Óbidos, Leiria</p>
+            <p>14 527,20m2</p>
+          </h4>
+        </div>
+      </a>
+            
+      <a href="https://www.imovirtual.com/pt/anuncio/t3-nas-avenidas-novas-ID17p4z.html">
+       <img src="foto 3.jpg" class="img-gallery" id="ft3" alt= "snow" title="T3 com 184m2 - Avenidas Novas, Lisboa- Foto 1">
+       <div class="legenda" id="t3">
+         <h4>
+           <p>1 340 000€</p>
+           <p>Avenidas Novas, Lisboa</p>
+           <p>184m2</p>
+          </h4>
+        </div>
+      </a>
+            
+      <a href="https://www.imovirtual.com/pt/anuncio/apartamento-t2-junto-a-areosa-ID11ZE9.html">
+       <img src="foto 4.jpg" class="img-gallery" id="ft4" alt= "snow" title="Apartamento T2 com 84,70m2 - Rua da Giesta – Areosa, Rio Tinto- Foto 1">
+        <div class="legenda" id="t4">
+          <h4>
+            <p>197 870 €</p>
+            <p>Rua da Giesta – Areosa, Rio Tinto</p>
+            <p>84,70m2</p>
+          </h4>
+        </div>
+      </a>  
+            
+      <a href="https://www.imovirtual.com/pt/anuncio/rivera-living-ID171kh.html">
+        <img src="foto 5.jpg" class="img-gallery" id="ft5" alt= "snow" title="Empreendimentos - Avenida Padre Alves Correia, Santa- Foto 1">
+          <div class="legenda" id="t5">
+            <h4>
+              <p>Preço sob consulta</p>
+              <p>Avenida Padre Alves Correia, Santa Marinha e São Ped…</p>
+              <p>Empreendimentos - Avenida Padre Alves Correia, Santa </p>
+            </h4>
+          </div>
+      </a>
+            
+      <a href="https://www.imovirtual.com/pt/anuncio/moradia-t5-totalmente-remodelada-excelente-oportunidade-para-turismo-ID16ccj.html">
+        <img src="foto 6.jpg" class="img-gallery" id="ft6" alt= "snow" title="Moradias - Serrazes, São Pedro do Sul, Viseu- Foto 1">
+        <div class="legenda" id="t6">
+          <h4>
+            <p>275 000€</p>
+            <p>Serrazes, São Pedro do Sul, Viseu</p>
+            <p>283m2</p>
+            </h4>
+        </div>
+      </a>
+    </div>
+  </div>      
+  <button type="button" class="ver_vermelho" ><a href="https://www.imovirtual.com/anuncios/?search%5Bhomepage_ads%5D=1">Ver tudo</a></button>
+
+   <!-- lista de simbolos -->
+  <div class="fundo">
+    <br>
+    <h2>No Imovirtual vai encontrar</h2>
+    <div class="simbolos">
+      <ul class="lista-icons"> 
+        <li class="icon">
+          <a href="#" class="circle"><img src="apartamento.png" class="icon_circle"></a>
+          <h3>apartamentos</h3>
+          <ul class="icon-options">
+           <li><a href="https://www.imovirtual.com/comprar/apartamento/">para comprar</a></li>
+           <li><a href="https://www.imovirtual.com/arrendar/apartamento/">para arrendar</a></li>
+           <li><a href="https://www.imovirtual.com/ferias/apartamento/">Para férias</a></li>  
+          </ul>  
+        </li>
+
+        <li class="icon">
+          <a href="#" class="circle"><img src="moradias.png" class="icon_circle"></a>
+          <h3>moradias</h3>
+          <ul class="icon-options">
+            <li><a href="https://www.imovirtual.com/comprar/moradia/">para comprar</a></li>
+            <li><a href="https://www.imovirtual.com/arrendar/moradia/">para arrendar</a></li>
+            <li><a href="https://www.imovirtual.com/ferias/moradia/">Para férias</a></li>   
+           </ul>
+        </li>
+
+        <li class="icon">
+          <a href="#" class="circle"><img src="quarto.jpg" class="icon_circle"></a>
+          <h3>quartos</h3>
+          <ul class="icon-options">
+            <li><a href="https://www.imovirtual.com/arrendar/quarto/">para arrendar</a></li>
+          </ul>
+        </li>
+
+        <li class="icon">
+          <a href="#" class="circle"><img src="terreno.jpg" class="icon_circle"></a>
+          <h3>terrenos</h3>
+          <ul class="icon-options">
+            <li><a href="https://www.imovirtual.com/comprar/terreno/">para comprar</a></li>
+            <li><a href="https://www.imovirtual.com/arrendar/terreno/">para arrendar</a></li>
+          </ul>
+        </li>
+        
+        <li class="icon">
+          <a href="#" class="circle"><img src="loja.jpg" class="icon_circle"></a>
+          <h3>lojas</h3>
+          <ul class="icon-options">
+            <li><a href="https://www.imovirtual.com/comprar/loja/">para comprar</a></li>
+            <li><a href="https://www.imovirtual.com/arrendar/loja/">para arrendar</a></li> 
+          </ul>
+        </li>  
+
+        <li class="icon">
+          <a href="#" class="circle"><img src="armazem.jpg" class="icon_circle"></a>
+          <h3>armazéns</h3>
+          <ul class="icon-options">
+            <li><a href="https://www.imovirtual.com/comprar/armazem/">para comprar</a></li>
+            <li><a href="https://www.imovirtual.com/arrendar/armazem/">para arrendar</a></li>  
+          </ul>
+        </li> 
+
+        <li class="icon">
+          <a href="#" class="circle"><img src="predio.jpg" class="icon_circle"></a>
+          <h3>prédios</h3>
+          <ul class="icon-options">
+            <li><a href="https://www.imovirtual.com/comprar/predios/">para comprar</a></li>
+            <li><a href="https://www.imovirtual.com/arrendar/predios/">para arrendar</a></li> 
+          </ul>
+        </li> 
+
+        <li class="icon">
+          <a href="#" class="circle"><img src="escritorio.jpg"class="icon_circle"></a>
+          <h3>escritórios</h3>
+          <ul class="icon-options">
+            <li><a href="https://www.imovirtual.com/comprar/escritorio/">para comprar</a></li>
+            <li><a href="https://www.imovirtual.com/arrendar/escritorio/">para arrendar</a></li>
+          </ul>
+        </li>
+
+        <li class="icon">
+          <a href="#" class="circle"><img src="garagem.jpg"class="icon_circle"></a>
+          <h3>garagens</h3>
+          <ul class="icon-options">
+            <li><a href="https://www.imovirtual.com/comprar/garagem/">para comprar</a></li>
+            <li><a href="https://www.imovirtual.com/arrendar/garagem/">para arrendar</a></li> 
+          </ul>
+        </li> 
+        
+        <li class="icon">
+          <a href="#" class="circle"><img src="quintaherdade.png"class="icon_circle"></a>
+          <h3>quintas e herdades</h3>
+          <ul class="icon-options">
+            <li><a href="https://www.imovirtual.com/comprar/quintaeherdade/">para comprar</a></li>
+            <li><a href="https://www.imovirtual.com/arrendar/quintaeherdade/">para arrendar</a></li>
+          </ul>
+        </li>  
+
+        <li class="icon">
+          <a href="#" class="circle"><img src="trespasse.png"class="icon_circle"> </a>
+          <h3>trespasses</h3>
+          <ul class="icon-options">
+           <li><a href="https://www.imovirtual.com/comprar/trespasse/">para comprar</a></li>
+          </ul>
+        </li>   
+
+        <li class="icon">
+          <a href="#" class="circle"><img src="empreendimentos.jpg"class="icon_circle"></a>
+          <h3>empreendimentos</h3> 
+          <ul class="icon-options">
+            <li><a href="https://www.imovirtual.com/comprar/investimento/">para comprar</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div> 
+  
+    <h1>Blog</h1>
+    <div class="galeria2">
+      <div class="fotos2">
+        <div id="blog1">
+          <a href="https://www.imovirtual.com/noticias/lifestyle/preparar-casa-inverno">
+            <img src="blog1.jpg" class="img-gallery2" title= "Prepare a sua casa para o inverno">
+          </a>
+          <span class="titulo_azul">lifestyle</span>
+          <div class="legenda2" id="b1">
+            <h4>
+              <p>09.01.2022</p>
+              <p>Prepare a sua casa para o inverno</p>
+            </h4>
+            <div class="palavras">
+              <span class="texto_preto">inverno </span>
+              <span class="texto_preto">aquecedor</span>
+              <span class="texto_preto">decoração de interiores</span>
+              <span class="texto_preto">humidade</span>
+              <span class="texto_preto">janelas</span>
+              <span class="texto_preto">closet</span>
+              <span class="texto_preto">isolamento térmico</span>
+            </div>
+          </div>
+        </div>
+        <div id="blog2">
+          <a href="https://www.imovirtual.com/noticias/financas/tudo-sobre-credito-bonificado">
+            <img src="blog2.jpg" class="img-gallery2"  title="Saiba tudo sobre Crédito Bonificado">
+          </a>
+          <div class="legenda2" id="b2">
+            <h4>
+              <p>08.01.2022</p>
+              <p>Saiba tudo sobre Crédito Bonificado </p>
+            </h4>
+            <div class="palavras">
+              <span class="texto_preto">crédito </span>
+              <span class="texto_preto">finanças</span>
+              <span class="texto_preto">crédito bonificado</span>
+              <span class="texto_preto">crédito habitação</span>
+            </div>
+          </div>
+        </div>
+        <div id="blog3">
+          <a href="https://www.imovirtual.com/noticias/noticias/imosintese-noticias-070122">
+           <img src="blog3.jpg" class="img-gallery2"  title="IMOSSÍNTESE-NOTÍCIAS 07/01">
+          </a>
+          <div class="legenda2" id="b3">
+            <h4>
+              <p>07.01.2022</p>
+              <p>IMOSSÍNTESE-NOTÍCIAS 07/01</p>
+            </h4>
+            <div class="palavras">
+              <span class="texto_preto">SEGURADORAS </span>
+              <span class="texto_preto">ASSOCIAÇÃO PORTUGUESA DE SEGURADORES</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="mais_vermelho" ><a href="https://www.imovirtual.com/noticias/">Mais artigos</a></button>
+  </div>
+
+
+  <div class="parte_java">
+    <h3>Calcule o preço do imóvel</h3>
+    <h4>(Clique no butão)</h4>
+    <button onclick="Mostra()" class="preco_imovel">Preço Imóvel</button>
+    <div id="butoes_calcular" style="display:none">
+     
+        <div id="tipologia"> 
+          <span>Tipologia</span>
+          <input type="radio" id="t" name="tipologia_valor" value="T0" checked>
+          <label for="t0">T0</label>
+          <input type="radio" id="t" name="tipologia_valor" value="T1">
+          <label for="t1">T1</label>
+          <input type="radio" id="t" name="tipologia_valor" value="T2">
+          <label for="t2">T2</label>  
+          <input type="radio" id="t" name="tipologia_valor" value="T3">
+          <label for="t3">T3</label>
+          <input type="radio" id="t" name="tipologia_valor" value="T4">
+          <label for="t4">T4</label>
+          <input type="radio" id="t" name="tipologia_valor" value="T5">
+          <label for="t5">T5</label>  
+          <input type="radio" id="t" name="tipologia_valor" value="T6">
+          <label for="t6">T6</label>
+          <input type="radio" id="t" name="tipologia_valor" value="T7">
+          <label for="t7">T7</label>  
+          <input type="radio" id="t" name="tipologia_valor" value="T8">
+          <label for="t8">T8</label>
+          <input type="radio" id="t" name="tipologia_valor" value="T9">
+          <label for="t9">T9</label>
+          <input type="radio" id="t" name="tipologia_valor" value="T10">
+          <label for="t10">T10 ou mais</label>
+        </div>
+        <div id="numero_area">    
+          <span>Área útil</span>
+          <input type="number" min="1" name="area" id="area_tamanho" required="required"> m²
+        </div> 
+        <div id="idade_imovel_numero">  
+          <span>Idade do Imóvel</span>
+          <input type="number" min="0" name="idade" id="idade_imovel" required="required"> anos
+        </div>
+        <div id="garagem">
+          <span>Têm garagem?</span>
+          <input type="checkbox" id="temgaragem" name="garagem">
+          <label>Sim</label>
+        </div>
+        <div id="transportes">
+          <span>Proximidade de transportes públicos</span>
+          <input type="checkbox" id="transporte" name="transportes">
+          <label>Sim</label>
+        </div>     
+        
+        <button id="calcular_btn" type="submit" class="preco_imovel" onclick="calcular()">Calcular</button>
+        <div class="cenarios">
+          <div id="zonas" style="display:none">
+            <div style="display: inline-flex"> 
+              <div class="zona_1">
+                <div class="selecionadoZ1"></div>  
+                <h1>Zona 1</h1>
+                <h2><label id="totalZ1"></label> €</h2>
+                <div class="esconderZ1" style="display:none">
+                  <h4>€/m²: <label id="precoZ1"></label></h4>
+                  <h4>Área: <label id="areaZ1"></label> m²</h4>
+                  <h4>Tipologia: <label id="tipologiaZ1"></label></h4>
+                  <h4>Idade: <label id="idadeZ1"></label></h4>
+                  <h4>Garagem: <label id="garagemZ1"></label></h4>
+                  <h4>Transportes: <label id="proximidadeZ1"></label></h4>
+                </div>
+              </div>
+              <div class="zona_2">
+                <div class="selecionadoZ2"></div>  
+                <h1>Zona 2</h1>
+                <h2><label id="totalZ2"></label> €</h2>
+                <div class="esconderZ2" style="display:none">
+                    <h4>€/m²: <label id="precoZ2"></label></h4>
+                    <h4>Área: <label id="areaZ2"></label> m²</h4>
+                    <h4>Tipologia: <label id="tipologiaZ2"></label></h4>
+                    <h4>Idade: <label id="idadeZ2"></label></h4>
+                    <h4>Garagem: <label id="garagemZ2"></label></h4>
+                    <h4>Transportes: <label id="proximidadeZ2"></label></h4>
+                </div>
+              </div>
+              <div class="zona_3">
+                <div class="selecionadoZ3"></div> 
+                <h1>Zona 3</h1>
+                <h2><label id="totalZ3"></label> €</h2>
+                <div class="esconderZ3" style="display:none">
+                    <h4>€/m²: <label id="precoZ3"></label></h4>
+                    <h4>Área: <label id="areaZ3"></label> m²</h4>
+                    <h4>Tipologia: <label id="tipologiaZ3"></label></h4>
+                    <h4>Idade: <label id="idadeZ3"></label></h4>
+                    <h4>Garagem: <label id="garagemZ3"></label></h4>
+                    <h4>Transportes: <label id="proximidadeZ3"></label></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="financiamento_btn"  class="preco_imovel" onclick="financiamento()">Financiamento</button>
+      
+      
+        <div id="finaciamento" style="display:none">
+          
+          <div>
+            <div id="prazo_numero">  
+              <span>Prazo</span>
+              <input type="number" min="1" name="prazo" id="prazo" required="required"> anos
+            </div>
+            <div id="numero_montante_inicial">    
+              <span>Entrada Inicial</span>
+              <input type="number" min="1" name="montante" id="montante_inicial" required="required"> €
+            </div> 
+          </div>
+          <button id="gerar_btn" onclick="simular()" class="preco_imovel" >Simular</button>
+          <div class="cenarios_emprestimo">
+            <div id="emprestimo" style="display:none">
+              <div style="display: inline-flex"> 
+                <div class="banco">
+                  <img id="banco1" src="bancos/abanca.jpg">
+                  <h4>Montante total: <label id="montanteZ1"></label> €</h4>
+                  <h4>Valor do empréstimo: <label id="emprestimoZ1"></label> €</h4>
+                  <h4>Taxa de juro global: <label id="juroZ1"></label> %</h4>
+                  <h4>Spread: <label id="spreadZ1"></label> %</h4>
+                  <h4>Valor da entrada inicial: <label id="valor_entradaZ1"></label> €</h4>
+                  <h4>Valor mensal da prestação: <label id="valor_mensalZ1"></label> €</h4>
+                </div>
+
+                <div class="banco">
+                  <img id="banco2" src="bancos/activobank.jpg"  width="100" height="100" >
+                  <h4>Montante total: <label id="montanteZ2"></label> €</h4>
+                  <h4>Valor do empréstimo: <label id="emprestimoZ2"></label> €</h4>
+                  <h4>Taxa de juro global: <label id="juroZ2"></label> %</h4>
+                  <h4>Spread: <label id="spreadZ2"></label> %</h4>
+                  <h4>Valor da entrada inicial: <label id="valor_entradaZ2"></label> €</h4>
+                  <h4>Valor mensal da prestação: <label id="valor_mensalZ2"></label> €</h4>
+                </div>
+
+                <div class="banco">
+                  <img id="banco3" src="bancos/creditoagricola.jpg"  width="100" height="100">
+                  <h4>Montante total: <label id="montanteZ3"></label> €</h4>
+                  <h4>Valor do empréstimo: <label id="emprestimoZ3"></label> €</h4>
+                  <h4>Taxa de juro global: <label id="juroZ3"></label> %</h4>
+                  <h4>Spread: <label id="spreadZ3"></label> %</h4>
+                  <h4>Valor da entrada inicial: <label id="valor_entradaZ3"></label> €</h4>
+                  <h4>Valor mensal da prestação: <label id="valor_mensalZ3"></label> €</h4>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <img id="banco1" scr="bancos/abanca.jpg">
+  <footer>
+  <li>
+  <p>
+    <div class="centrar">
+      <div id="parte1">
+        <span>Pesquisas mais frequentes</span>
+        <p><a href="https://www.imovirtual.com/comprar/apartamento/lisboa/">Comprar apartamento em Lisboa</a></p>
+        <p><a href="https://www.imovirtual.com/arrendar/apartamento/lisboa/">Arrendar apartamento em Lisboa</a></p>
+        <p><a href="https://www.imovirtual.com/comprar/apartamento/porto/"> Comprar apartamento no Porto </a></p>
+        <p><a href="https://www.imovirtual.com/comprar/moradia/vila-nova-de-gaia/">Comprar moradia em Vila Nova de Gaia</a></p>
+        <p><a href="https://www.imovirtual.com/comprar/moradia/sintra/">Comprar moradia em Sintra</a></p>
+      </div>
+
+      <div id="parte2">
+        <p><a href="https://www.imovirtual.com/comprar/escritorio/lisboa/">Comprar escritório em Lisboa</a></p>
+        <p><a href="https://www.imovirtual.com/comprar/escritorio/porto/">Comprar escritório no Porto</a></p>
+        <p><a href="https://www.imovirtual.com/comprar/loja/porto/">Comprar loja no Porto</a></p>
+        <p><a href="https://www.imovirtual.com/comprar/armazem/lisboa/">Comprar armazém em Lisboa</a></p>
+        <p><a href="https://www.imovirtual.com/comprar/garagem/porto/">Comprar garagem no Porto</a></p>
+      </div>
+
+      <div class = "vertical"></div>
+
+      <div id="parte3">
+        <span>Anúncios recentes</span>
+        <p><a href="https://www.imovirtual.com/pt/anuncio/terreno-IDFXop.html">Terreno</a></p>
+        <p><a href="https://www.imovirtual.com/pt/anuncio/armazem-IDFXog.html">Armazém</a></p>
+        <p><a href="https://www.imovirtual.com/pt/anuncio/terreno-IDFXo7.html">Terreno</a></p>
+        <p><a href="https://www.imovirtual.com/pt/anuncio/terreno-IDFXnY.html">Terreno</a></p>
+        <p><a href="https://www.imovirtual.com/pt/anuncio/armazem-venda-em-avidos-e-lagoa-vila-nova-de-famalicao-IDFXdn.html">Armazém Venda em Avidos e Lagoa,Vila Nova de Famalicão</a></p>
+        <p><a href="https://www.imovirtual.com/pt/anuncio/loja-imovel-de-banco-financiamento-garantido-IDFXaq.html">Loja IMÓVEL DE BANCO - FINANCIAMENTO GARANTIDO</a></p>
+      </div>
+
+      <div id="parte4">
+        <p><a href="https://www.imovirtual.com/pt/anuncio/terreno-agricola-IDFX9T.html">Terreno agrícola</a></p>
+        <p><a href="https://www.imovirtual.com/pt/anuncio/moradia-t4-em-palmela-com-vista-para-a-serra-da-arrabida-IDFX1q.html">Moradia T4 em Palmela com vista para a serra da Arrabida</a></p> 
+        <p><a href="https://www.imovirtual.com/pt/anuncio/venda-de-lote-com-942-m2-fradelos-vila-nova-de-famalicao-IDFVZM.html">Venda de Lote com 942 m2, Fradelos, Vila Nova de Famalicão</a></p> 
+        <p><a href="https://www.imovirtual.com/pt/anuncio/moradia-t2-aceitam-se-propostas-IDFVHx.html"> Moradia T2 - Aceitam-se Propostas</a></p>
+      </div>
+    </div>
+  </p>
+  </li>
+
+    <li>
+      <div></div>
+      <div class="centrar">
+      <div id="um">    
+        <img src="imovirtual_logo.png"> 
+        <p><a href ="https://imovirtual1.zendesk.com/hc/pt/articles/115003030893-Sobre-n%C3%B3s">Sobre nós</a></p>
+        <p><a href ="https://imovirtual1.zendesk.com/hc/pt">Ajuda</a></p>
+        <p><a href ="https://imovirtual1.zendesk.com/hc/pt/requests/new?ticket_form_id=114093985833">Contacte-nos - Serviço Clientes</a></p>
+        <p><a href ="https://www.imovirtual.com/conta/precos/profissional/">Preços</a> </p>
+        <p><a href ="https://imovirtual1.zendesk.com/hc/pt/articles/360003266393-Termos-e-Condi%C3%A7%C3%B5es">Termos de Utilização</a> </p>
+        <p><a href ="https://imovirtual1.zendesk.com/hc/pt/articles/360004222854--NOVO-Pol%C3%ADtica-de-Privacidade">Política de Privacidade</a> </p>
+        <p><a href ="https://cookiepedia.co.uk/giving-consent-to-cookies">Configurações de privacidade</a> </p>
+        <p><a href ="https://www.livroreclamacoes.pt/Inicio/">Livro de Reclamações online</a></p>
+       <p><a href ="https://imovirtual1.zendesk.com/hc/pt/sections/115000697094-Dicas">Dicas</a> </p>
+      </div>
+             
+      <div id="dois">
+        <p><span>Serviços e Ferramentas</span>
+        <p><a href ="https://www.imovirtual.com/clientes/">Vantagens para Profissionais</a> </p>
+        <p><a href ="https://imovalor.pt/">Imovalor</a></p>
+        <p><a href ="https://relatoriomercado.imovirtual.com/login">Relatório Mercado</a></p>
+      </div>
+
+      <div id="tres">
+       <p><span>Mapa do site</span>
+       <p><a href ="https://www.imovirtual.com/mapa-de-categorias/">Mapa do Site</a></p> 
+       <p><a href ="https://www.imovirtual.com/noticias/">Mapa de distritos</a> </p>
+       <p><a href ="https://www.imovirtual.com/noticias/">Blog</a>  </p>
+       <p><a href ="https://www.imovirtual.com/empresas/agencias-imobiliarias/">Lista de Agências</a></p>
+       <p><a href ="https://www.olxgroup.com/">Carreiras</a></p>
+      </div>
+      <div id="onde_encontrar">
+        <div class="google">
+         <a href="https://play.google.com/store/apps/details?id=com.fixeads.imovirtual&referrer=utm_source%3Dimovirtual.com%26utm_medium%3Dcpc%26utm_campaign%3Dandroid-app-footer">
+         <img src="g1.png" title="Imovirtual Portal Imobilário- Google Play">
+         </a>
+         <a href="https://apps.apple.com/pt/app/imovirtual/id594152735">
+         <img src="ap1.png" title="Imovirtual Portal Imobilário- App Store">
+         </a>
+        </div>
+        <p><span>Social</span></p>
+        <div class="Social">
+          <a href="https://www.facebook.com/Imovirtual">
+          <img src="face.png" title="Facebook Imovirtual">
+          </a>
+         
+          <a href="https://www.youtube.com/user/Imovirtual">
+          <img src="yt.png" title="Youtube Imovirtual">
+          </a>
+        
+          <a href="https://www.instagram.com/imovirtual/">
+          <img src="insta.png" title="Instagram Imovirtual">
+          </a>
+        </div>
+        <p>
+        <img src="esc.con.png">
+        <img src="cines.png" title="Youtube Imorvirtual">
+        </p>
+      </div> 
+    </li>
+    <div class="termos">
+      O uso do website pressupõe uma aceitação dos <a href="https://imovirtual1.zendesk.com/hc/pt/articles/360003266393-Termos-e-Condi%C3%A7%C3%B5es">Termos de Utilização</a>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="logica.js"></script>
+</body>
+</html>
